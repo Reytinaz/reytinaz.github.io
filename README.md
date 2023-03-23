@@ -1,2 +1,2 @@
-# reytinaz.com
+# reytinaz
 just a web-site

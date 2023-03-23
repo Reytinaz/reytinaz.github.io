@@ -1,2 +1,2 @@
-# reytinaz.github.io
+# reytinaz.com
 just a web-site

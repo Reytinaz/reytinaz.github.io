@@ -1,6 +1,10 @@
-a {
-    color:#1a1a1a
+body {
+    background-image: url(assets/RobloxScreenShot20230324_142728667.png);
 }
-#info {
-    background-color: rgb(235, 235, 235);
+a {
+    color:#1a1a1a;
+}
+#zagolovok {
+    background-color: #e2e2e2;
+    border: 2px solid #1a1a1a;
 }

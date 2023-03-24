@@ -10,17 +10,21 @@ a {
 }
 #div1 {
     background-color: #f0f0f0;
+    backface-visibility: 0.7;
     border: 1px solid #1a1a1a;
 }
 #div2 {
     background-color: #f0f0f0;
+    backface-visibility: 0.7;
     border: 1px solid #1a1a1a;
 }
 #div3 {
     background-color: #f0f0f0;
+    backface-visibility: 0.7;
     border: 1px solid #1a1a1a;
 }
 #div4 {
     background-color: #f0f0f0;
+    backface-visibility: 0.7;
     border: 1px solid #1a1a1a;
 }

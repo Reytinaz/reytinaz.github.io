@@ -45,6 +45,7 @@ a {
 }
 .navbar-menu li a:hover {
     opacity: 1;
+    font-size: 20px;
 }
 .navbar-wrap {
     display: flex;

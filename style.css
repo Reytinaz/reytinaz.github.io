@@ -48,5 +48,19 @@ a {
 
 .big-text {
     opacity: 1;
-    transform: scale(0.1);
+    transform: scale(1.7);
+}
+
+.big-div {
+    opacity: 0.5;
+    transform: scale(1.7);
+    border-radius: 80px;
+}
+
+.title1 {
+    opacity: 1;
+    background-color: aliceblue;
+    border-radius: 80px;
+    text-decoration: none;
+    color: #9e9e9e;
 }

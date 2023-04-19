@@ -1,11 +1,15 @@
 /*body {
     background-image: url(assets/RobloxScreenShot20230324_142728667.png);
 } */
-/* a {
+body {
+    background-color: rgb(214, 214, 214);
+}
+a {
    color:#1a1a1a;
-} */
+} 
 .navbar {
-    width: 100%;
+    background-color: rgb(244, 252, 255);
+    width: 110%;
     height: 70px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
 }
@@ -31,13 +35,16 @@
     padding: 10px;
     transition: all .08s ease-in-out;
 }
+.navbar-menu li a:hover {
+    opacity: 1;
+}
 .navbar-wrap {
     display: flex;
     flex-flow: none nowrap;
 }
 .navbar-logo {
     font-weight: 700;
-    font-size: 24;
+    font-size: 26px;
     text-decoration: none;
     color: #3a3a3a;
     transition: all .08s ease-in-out;

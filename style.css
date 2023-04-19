@@ -48,7 +48,6 @@
 
 .big-text {
     opacity: 1;
-    transform: scale(1.7);
 }
 
 .big-div {
@@ -58,8 +57,9 @@
 
 .title1 {
     opacity: 1;
-    background-color: aliceblue;
+    background-color: rgb(179, 179, 179);
     border-radius: 80px;
     text-decoration: none;
-    color: #9e9e9e;
+    color: #494949;
+    text-align: center;
 }

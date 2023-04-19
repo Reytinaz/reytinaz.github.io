@@ -4,42 +4,49 @@ body {
 a {
     color:#1a1a1a;
 }
-#zagolovok1 {
-    background-color: #fff;
-    border: 1px solid #1a1a1a;
-    border-radius: 40px;
-    box-shadow: 0px 15px 50px #1a1a1a;
-    text-align: center;
+.navbar {
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-#bigtext {
-    font-weight: 800;
+.navbar.container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#div1 {
-    background-color: #fff;
+.navbar-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar-menu li {
+    display: inline-block;
+}
+.navbar-menu li a{
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .08s ease-in-out;
+}
+.navbar-wrap {
+    display: flex;
+    flex-flow: none nowrap;
+}
+.navbar-logo {
+    font-weight: 700;
+    font-size: 24;
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: all .08s ease-in-out;
+}
+.navbar-logo:hover {
+    color: #707070;
+}
 
-    opacity: 0.6;
-    border: 1px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 0px 15px 50px #1a1a1a;
-}
-#div2 {
-    background-color: #fff;
-    opacity: 0.6;
-    border: 1px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 0px 15px 50px #1a1a1a;
-}
-#div3 {
-    background-color: #fff;
-    opacity: 0.6;
-    border: 1px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 0px 15px 50px #1a1a1a;
-}
-#div4 {
-    background-color: #fff;
-    opacity: 0.6;
-    border: 1px solid #1a1a1a;
-    border-radius: 30px;
-    box-shadow: 0px 15px 50px #1a1a1a;
+.big-text {
+    opacity: 1;
+    transform: scale(0.1);
 }

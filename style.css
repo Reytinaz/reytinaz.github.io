@@ -65,16 +65,17 @@ a {
 }
 
 .big-div {
-    opacity: 0.5;
+    opacity: 1;
     border-radius: 80px;
 }
 
 .title1 {
+    padding-top: 20px;
     padding-bottom: 10px;
     opacity: 1;
-    background-color: rgb(179, 179, 179);
-    border-radius: 80px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 60px;
     text-decoration: none;
-    color: #494949;
+    color: #5e5e5e;
     text-align: center;
 }

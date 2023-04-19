@@ -38,6 +38,7 @@ a {
     display: inline-block;
     color: #000;
     opacity: 0.6;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px;
     transition: all .08s ease-in-out;
@@ -50,14 +51,14 @@ a {
     flex-flow: none nowrap;
 }
 .navbar-logo {
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 900;
+    font-size: 30px;
     text-decoration: none;
     color: #3a3a3a;
     transition: all .08s ease-in-out;
 }
 .navbar-logo:hover {
-    color: #707070;
+    color: #141414;
 }
 
 .big-text {

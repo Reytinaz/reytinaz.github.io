@@ -60,6 +60,7 @@ a {
 
 .big-text {
     opacity: 1;
+    font-size: 30px;
 }
 .link li a:hover(){
     opacity: 1;
@@ -76,6 +77,12 @@ a {
     background-color: rgb(196, 196, 196);
     border-radius: 10px;
     text-decoration: none;
+    color: #5e5e5e;
+    text-align: center;
+}
+.title2 {
+    opacity: 0.8;
+    background: none;
     color: #5e5e5e;
     text-align: center;
 }

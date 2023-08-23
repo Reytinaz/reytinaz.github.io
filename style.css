@@ -1,5 +1,4 @@
 body {
-    background-color: rgb(240, 240, 240);
     position: relative;
     font-family: "Note Sans" sans-serif;
     font-size: 16px;
@@ -7,7 +6,6 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     height: auto;
-    background-image: url(assets/RobloxScreenShot20230324_142728667.png);
 }
 a {
    color:#1a1a1a;
@@ -61,18 +59,19 @@ a {
 }
 
 .big-text {
-    opacity: 1;
+    opacity: 1.1;
+    font-size: 30px;
 }
 
 .big-div {
-    opacity: 1;
+    opacity: 1.2;
     border-radius: 80px;
 }
 
 .title1 {
     opacity: 1;
     background-color: rgb(196, 196, 196);
-    border-radius: 60px;
+    border-radius: 10px;
     text-decoration: none;
     color: #5e5e5e;
     text-align: center;

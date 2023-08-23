@@ -62,7 +62,7 @@ a {
     opacity: 1;
     font-size: 30px;
 }
-.link a:hover() {
+.link-text a:hover() {
     opacity: 1;
     font-size: 30px;
     text-decoration: none;

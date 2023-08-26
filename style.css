@@ -57,12 +57,16 @@ a {
 .navbar-logo:hover {
     color: #141414;
 }
-
+.wrapper2 {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .big-text {
     opacity: 1;
     font-size: 30px;
 }
-.link-text {
+.link-text a:hover() {
     opacity: 1;
     font-size: 30px;
     color: #141414;

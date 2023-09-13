@@ -4,9 +4,8 @@ body {
     font-family: "Note Sans" sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    min-width: 320px;
     overflow-x: hidden;
-    height: auto;
+    height: 100%;
     background: rgb(186,185,223);
     background: linear-gradient(30deg, rgba(186,185,223,1) 0%, rgba(227,244,247,1) 100%);
 }
@@ -77,6 +76,7 @@ a {
 .big-text {
     opacity: 1;
     font-size: 30px;
+    text-decoration: none;
 }
 .link-text a:hover() {
     opacity: 1;
@@ -112,5 +112,45 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%
+    border-radius: 10px;
+    width: 70%
+}
+.image2 {
+    border-radius: 5px;
+    width: 75%;
+}
+.middle-text {
+    text-align: center;
+}
+.div-panel {
+    display: block;
+    position: relative;
+    background: rgb(150,171,174);
+    background: linear-gradient(0deg, rgba(150,171,174,1) 0%, rgba(183,202,209,1) 100%);
+    opacity: 1;
+    margin-top: 2%;
+    left: 5%;
+    border-radius: 20px;
+    width: 91%;
+}
+.game-panel a {
+    text-decoration: none;
+    color: #141414;
+    font-size: 25px;
+}
+.game-panel img {
+    position:  relative;
+    left: 1%;
+    margin-bottom: 1%;
+}
+.game-panel {
+    display: block;
+    position: relative;
+    background: rgb(150,171,174);
+    background: linear-gradient(0deg, rgba(150,171,174,1) 0%, rgba(183,202,209,1) 100%);
+    opacity: 1;
+    margin-top: 2%;
+    left: 2%;
+    border-radius: 20px;
+    width: 90%;
 }

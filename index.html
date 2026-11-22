@@ -1,105 +1,710 @@
-<!DOCTYPE html>
-<html>
-	<head>		
-		<meta charset="UTF-8">
-		<meta name="google-site-verification" content="6BnbAbyp1brLT2bWtB__TeGc9alUss-nvtBeOLxrHCA" />
-		<title>Creations - Reytinaz</title>	
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<link rel="shortcut icon" type="x-icon" href="assets/Website Image.png">
-		<link rel="icon" href="assets/Website Image.png">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="6BnbAbyp1brLT2bWtB__TeGc9alUss-nvtBeOLxrHCA" />
+    <title>Reytinaz - About</title>
+    <meta name="description" content="Roblox games, developer marketplace assets, and community links by Reytinaz." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="#top" class="brand">Reytinaz</a>
 
-		<link rel="stylesheet" href="bootsraps/bootstrap-reboot.min.css">
-		<link rel="stylesheet" href="bootsraps/bootstrap-grid.min.css">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#top" class="nav-link">Overview</a>
+          <a href="#creations" class="nav-link" data-tab-jump="games">Games</a>
+          <a href="#creations" class="nav-link" data-tab-jump="assets">Assets</a>
+          <a href="#contacts" class="nav-link">Contacts</a>
+        </nav>
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-	</head>	
+        <div class="topbar-actions">
+          <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm hide-mobile">
+            Join Discord <span aria-hidden="true">↗</span>
+          </a>
+          <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
 
-	<body>
-		<nav class="navbar">
-			<div class="navbar-logo">
-				<h1>Reytinaz</h1>
-			</div>
-			<ul class="navbar-menu">
-				<li><a href="index.html">Creations</a></li>
-				<li><a href="index2.html">Contacts</a></li>
-			</ul>
-		</nav>
-		<nav class="sidebar">
-			<hr>
-			<header>- ROBLOX -</header>
-			<ul>
-				<li><button onclick="
-					document.getElementById('robloxgames').style.display = 'block'
-					document.getElementById('robloxassets').style.display = 'none'
-				">Games</button></li>
-				<li><button onclick="
-					document.getElementById('robloxgames').style.display = 'none'
-					document.getElementById('robloxassets').style.display = 'block'
-				">Assets</button></li>
-			</ul>
-		</nav>
+      <div class="mobile-drawer" id="mobileDrawer" hidden>
+        <a href="#top" class="mobile-link">Overview</a>
+        <a href="#creations" class="mobile-link" data-tab-jump="games">Roblox Games</a>
+        <a href="#creations" class="mobile-link" data-tab-jump="assets">Creator Assets</a>
+        <a href="#contacts" class="mobile-link">Contacts</a>
+        <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer" class="btn-primary mobile-cta">
+          Join Discord <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
 
-		<div class="robloxassets" id="robloxassets" style="overflow-y: scroll; height: 100%">
-			<hr>
-			<div class="robloxassets-panel">
-				<h1 ><a href="https://create.roblox.com/marketplace/asset/15253113917">Rey's Rake Hours</a></h1>
-				<hr/>
-				<h1>This asset is for your Roblox Rake game, that helps you to create your own hours in your rake game. There is an instruction inside the asset, you must to read it.</h1>
-			</div>
-			<hr>
-			<div class="robloxassets-panel">
-				<h1 ><a href="https://create.roblox.com/marketplace/asset/9374844706">ChaYL's Admin Pack</a></h1>
-				<hr/>
-				<h1>This is an admin pack for your Roblox game. You can use a lot of different commands. This is in a Beta-Test, report in our Discord server any issues you find.</h1>
-			</div>
-			<hr>
-			<div class="robloxassets-panel">
-				<h1 ><a href="https://create.roblox.com/marketplace/asset/9374844706">Map Making Kit for Project In Flood</a></h1>
-				<hr/>
-				<h1>Create your cool map for Project In Flood. If you're done with it, publish your map and copy the link, after send it to me in Discord. I'll check your creation.</h1>
-			</div>
-			<hr>
-			<div class="robloxassets-text">
-				<h1 class="robloxassets-text">More Coming Soon!</a></h1>
-			</div>
-		</div>
+    <main id="top">
+      <!-- Split-Screen Hero -->
+      <section class="container hero">
+        <div class="hero-copy">
+          <div>
+            <p class="kicker">Roblox Developer <span class="sep">·</span> Experiences &amp; Studio Tools</p>
+            <h1 class="hero-title">Worlds built for Fun.</h1>
+            <p class="hero-lead">
+              Explore playable Roblox experiences by Reytinaz—spanning battlegrounds combat,
+              survival RPGs, surval Actions and More!
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#creations" class="btn-primary">Explore Creations</a>
+            <a href="#contacts" class="btn-secondary">Contacts &amp; Community</a>
+          </div>
+        </div>
 
-		<div class="robloxgames" id="robloxgames" style="overflow-y: scroll; height: 100%">
-			<hr/>
-			<div class="robloxgame-panel">
-				<h1 ><a href="https://www.roblox.com/games/13115507951/Silence-Of-Robot-BETA">Silence Of Robot (NEW)</a></h1>
-				<hr/>
-				<img src="assets/Jpeg.png", alt="Silence Of Robot">
-			</div>
-			<hr />
-			<div class="robloxgame-panel">
-				<h1 ><a href="https://www.roblox.com/games/12354208327/Defeat-Some-Rake-The-Old-Reborn">Defeat Some Rake</a></h1>
-				<hr/>
-				<img src="assets/DefeatSomeRake.png", alt="Defeat Some Rake">
-			</div>
-			<hr />
-			<div class="robloxgame-panel">
-				<h1 ><a href="https://www.roblox.com/games/7850075948/Project-In-Flood">Project In Flood</a></h1>
-				<hr/>
-				<img src="assets/ProjectInFlood.png", alt="Project In Flood">
-			</div>
-			<hr>
-			<div class="robloxgame-panel">
-				<h1 ><a href="https://www.roblox.com/games/9044893640/ChaYL-s-Admin-Test">ChaYL&#8217;s Admin Pack</a></h1>
-				<hr/>
-				<img src="assets/ChaYL.png", alt="Admin">
-			</div>
-			<hr>
-			<div class="robloxgame-panel">
-				<h1 ><a href="https://www.roblox.com/games/10853985544/Infect-Backout-ALPHA">Infect Backout [ ALPHA ]</a></h1>
-				<hr/>
-				<img src="assets/InfectBackout.png", alt="Infect Backout">
-			</div>
-			<hr/>,
-			<div class="robloxgame-text">
-				<h1 class="robloxgame-text">More Coming Soon!</a></h1>
-			</div>
-		</div>
-	</body>
+        <article class="hero-feature">
+          <img
+            src="https://tr.rbxcdn.com/180DAY-db11fa9edc37e01e85fe9a1d16ecb6b6/768/432/Image/Png/noFilter"
+            alt="Defeat Some Rake"
+            referrerpolicy="no-referrer"
+            class="hero-feature-img"
+          />
+          <div class="hero-feature-scrim"></div>
+          <div class="hero-feature-content">
+            <p class="meta-line">
+              <span class="accent-text">Featured</span>
+              <span class="sep">·</span>
+              <span>Battlegrounds &amp; Fighting</span>
+            </p>
+            <h2>Defeat Some Rake</h2>
+            <p class="hero-feature-desc">
+              An endless combat-based game where you and your team stand against a powerful creature using upgrades, spells, and various weapons.
+            </p>
+            <div class="hero-feature-btns">
+              <a href="https://www.roblox.com/games/12354208327/defeat-some-rake" target="_blank" rel="noopener noreferrer" class="btn-light">
+                Play on Roblox <span aria-hidden="true">↗</span>
+              </a>
+              <button
+                type="button"
+                class="btn-glass"
+                data-preview="defeat-some-rake"
+              >
+                Inspect Preview
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Summary Strip -->
+      <section class="container summary-strip" aria-label="Portfolio overview">
+        <div class="summary-cell">
+          <div class="summary-num accent-text">07</div>
+          <div class="summary-label">Published Roblox Games</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-num">03</div>
+          <div class="summary-label">Creator Store Assets</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-num">04</div>
+          <div class="summary-label">Community Channels</div>
+        </div>
+        <div class="summary-cell">
+          <div class="summary-num accent-text">Active</div>
+          <div class="summary-label">Games Development</div>
+        </div>
+      </section>
+
+      <!-- Marquee Divider -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>featured: defeat some rake · newest: rakeman: lost souls · endless rain · silence of robot · a portal game</span>
+          <span>featured: defeat some rake · newest: rakeman: lost souls · endless rain · silence of robot · a portal game</span>
+          <span>featured: defeat some rake · newest: rakeman: lost souls · endless rain · silence of robot · a portal game</span>
+        </div>
+      </div>
+
+      <!-- Creations Section -->
+      <section id="creations" class="container section-block">
+        <div class="section-header">
+          <div>
+            <p class="kicker">Roblox Catalog <span class="sep">·</span> Current Games & Assets</p>
+            <h2 class="section-title">Creations</h2>
+          </div>
+
+          <div class="tab-group" role="tablist" aria-label="Filter creations">
+            <button type="button" class="tab-btn is-active" data-tab="all" role="tab" aria-selected="true">All Creations</button>
+            <button type="button" class="tab-btn" data-tab="games" role="tab" aria-selected="false">Roblox Games</button>
+            <button type="button" class="tab-btn" data-tab="assets" role="tab" aria-selected="false">Creator Assets</button>
+          </div>
+        </div>
+
+        <!-- Games -->
+        <div id="gamesPanel" class="sub-section">
+          <div class="sub-header">
+            <h3>01. Roblox Games</h3>
+            <span class="mono-count">7 playable experiences</span>
+          </div>
+
+          <div class="bento-grid">
+            <!-- 1. Defeat Some Rake (Featured, 4 cols) -->
+            <article class="card span-4">
+              <button type="button" class="card-media media-16-9" data-preview="defeat-some-rake">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-db11fa9edc37e01e85fe9a1d16ecb6b6/768/432/Image/Png/noFilter"
+                  alt="Defeat Some Rake"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span class="accent-text">Featured</span>
+                    <span class="sep">·</span>
+                    <span>Battlegrounds &amp; Fighting</span>
+                  </p>
+                  <h4 class="card-title card-title-lg">Defeat Some Rake</h4>
+                  <p class="card-desc">
+                    An endless combat-based game where you and your team stand against a powerful creature using upgrades, spells, and various weapons.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/12354208327/defeat-some-rake" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="defeat-some-rake">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. RAKEMAN: Lost Souls (Newest, 2 cols) -->
+            <article class="card span-2">
+              <button type="button" class="card-media media-4-3" data-preview="rakeman-lost-souls">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-3dc86cd04e2924795f224823a78667e8/768/432/Image/Png/noFilter"
+                  alt="RAKEMAN: Lost Souls"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span class="accent-text">Newest Release</span>
+                    <span class="sep">·</span>
+                    <span>Survival with RPG Elements</span>
+                    <span class="sep">·</span>
+                    <span>Beta</span>
+                  </p>
+                  <h4 class="card-title">RAKEMAN: Lost Souls</h4>
+                  <p class="card-desc">
+                    Unleash your Soul and fight Rakeman. Train, learn, complete objectives, and survive against the stalker.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/116197041930311/RAKEMAN-Lost-Souls" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="rakeman-lost-souls">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. Endless Rain (2 cols) -->
+            <article class="card span-2">
+              <button type="button" class="card-media media-4-3" data-preview="endless-rain">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-eade99830a4595b71e36bd096f761a67/768/432/Image/Png/noFilter"
+                  alt="Endless Rain"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span>Action</span>
+                    <span class="sep">·</span>
+                    <span>Early Access</span>
+                  </p>
+                  <h4 class="card-title">Endless Rain</h4>
+                  <p class="card-desc">
+                    Fast-paced action set inside a storm-swept world under relentless downpours, currently in active Early Access development.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/17828836933/Endless-Rain-Early-Access" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="endless-rain">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4. Project In Flood (2 cols) -->
+            <article class="card span-2">
+              <button type="button" class="card-media media-4-3 media-contain" data-preview="project-in-flood">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-c51dfac2712ab54caad108ee76f68b27/512/512/Image/Png/noFilter"
+                  alt="Project In Flood"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span>Survival Obby</span>
+                    <span class="sep">·</span>
+                    <span>Live</span>
+                  </p>
+                  <h4 class="card-title">Project In Flood</h4>
+                  <p class="card-desc">
+                    Complete the course and escape rising floodwaters across community-built maps and obstacle stages.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/7850075948/Project-In-Flood" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="project-in-flood">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5. Infect Backout (2 cols) -->
+            <article class="card span-2">
+              <button type="button" class="card-media media-4-3 media-contain" data-preview="infect-backout">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-3d9ae92ab2be62be18276d361d44b474/512/512/Image/Png/noFilter"
+                  alt="Infect Backout"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span>Action</span>
+                    <span class="sep">·</span>
+                    <span>Alpha</span>
+                  </p>
+                  <h4 class="card-title">Infect Backout</h4>
+                  <p class="card-desc">
+                    Survive the night against the Infected—hide in lockers, buy survival gear, handle power outages, and complete all tasks.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/10853985544/Infect-Backout-ALPHA" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="infect-backout">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6. Silence Of Robot (3 cols) -->
+            <article class="card span-3">
+              <button type="button" class="card-media media-16-10" data-preview="silence-of-robot">
+                <img
+                  src="https://tr.rbxcdn.com/180DAY-fa00d529790918d14e16aa626cca2587/768/432/Image/Png/noFilter"
+                  alt="Silence Of Robot"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span>Facility Survival</span>
+                    <span class="sep">·</span>
+                    <span>Sci-Fi Survival</span>
+                    <span class="sep">·</span>
+                    <span>Beta</span>
+                  </p>
+                  <h4 class="card-title">Silence Of Robot</h4>
+                  <p class="card-desc">
+                    Take a shift at Best-Weld Corporation after AI robots gain self-control and try to survive across infinite stages.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/13115507951/Silence-Of-Robot-BETA" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="silence-of-robot">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7. ChaYL's Admin Pack (3 cols) -->
+            <article class="card span-3">
+              <button type="button" class="card-media media-16-10 media-contain" data-preview="chayl-admin-test">
+                <img
+                  src="https://t5.rbxcdn.com/180DAY-26de3a6f3be928df6691f27dc32575c9"
+                  alt="ChaYL's Admin Pack"
+                  referrerpolicy="no-referrer"
+                />
+              </button>
+              <div class="card-body">
+                <div>
+                  <p class="meta-line">
+                    <span>Sandbox Arena</span>
+                    <span class="sep">·</span>
+                    <span>Admin Testing</span>
+                    <span class="sep">·</span>
+                    <span>Beta Test</span>
+                  </p>
+                  <h4 class="card-title">ChaYL&apos;s Admin Pack</h4>
+                  <p class="card-desc">
+                    Interactive testing environment built to preview moderation tools, command permissions, and server utilities in real time.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://www.roblox.com/games/9044893640/ChaYL-s-Admin-Test" target="_blank" rel="noopener noreferrer" class="link-accent">
+                    Play on Roblox <span aria-hidden="true">↗</span>
+                  </a>
+                  <button type="button" class="link-muted" data-preview="chayl-admin-test">Details &amp; ID</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="section-note">
+            More games coming soon. Watch games preview videos on
+            <a href="https://www.youtube.com/channel/UCoX8sCDBYHisJUgnZMyLybA" target="_blank" rel="noopener noreferrer">YouTube</a>
+            Follow development progress on
+            <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer">Discord</a>.
+          </p>
+        </div>
+
+        <!-- Creator Assets -->
+        <div id="assetsPanel" class="sub-section sub-section-divider">
+          <div class="sub-header">
+            <h3>02. Creator Store Assets</h3>
+            <span class="mono-count">3 developer kits</span>
+          </div>
+
+          <div class="assets-grid">
+            <article class="card asset-card">
+              <div>
+                <p class="meta-line">
+                  <span>Hours System</span>
+                  <span class="sep">·</span>
+                  <span>Creator Store</span>
+                  <span class="sep">·</span>
+                  <span class="mono">ID 15253113917</span>
+                </p>
+                <h4 class="card-title">Rey&apos;s Rake Hours</h4>
+                <p class="card-desc">
+                  A modular hourly cycle system for Roblox Rake games that lets you configure custom night hours, pacing, and transitions.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://create.roblox.com/marketplace/asset/15253113917" target="_blank" rel="noopener noreferrer" class="link-accent">
+                  Get on Creator Store <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn-copy" data-copy="15253113917">Copy ID</button>
+              </div>
+            </article>
+
+            <article class="card asset-card">
+              <div>
+                <p class="meta-line">
+                  <span>Admin Pack (outdated)</span>
+                  <span class="sep">·</span>
+                  <span>Beta Test</span>
+                  <span class="sep">·</span>
+                  <span class="mono">ID 9374844706</span>
+                </p>
+                <h4 class="card-title">ChaYL&apos;s Admin Pack</h4>
+                <p class="card-desc">
+                  Command and moderation pack for Roblox experiences featuring a broad set of administrative utilities and quick-run commands.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://create.roblox.com/marketplace/asset/9374844706" target="_blank" rel="noopener noreferrer" class="link-accent">
+                  Get on Creator Store <span aria-hidden="true">↗</span>
+                </a>
+                <div class="footer-right">
+                  <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer" class="link-muted">Discord</a>
+                  <button type="button" class="btn-copy" data-copy="9374844706">Copy ID</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card asset-card">
+              <div>
+                <p class="meta-line">
+                  <span>PIF Map Pack</span>
+                  <span class="sep">·</span>
+                  <span>Creator Store</span>
+                  <span class="sep">·</span>
+                  <span class="mono">ID 9374844706</span>
+                </p>
+                <h4 class="card-title">Map Making Kit for Project In Flood</h4>
+                <p class="card-desc">
+                  Official starter kit for building custom flood-escape levels compatible with Project In Flood mechanics and triggers.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://create.roblox.com/marketplace/asset/9374844706" target="_blank" rel="noopener noreferrer" class="link-accent">
+                  Get on Creator Store <span aria-hidden="true">↗</span>
+                </a>
+                <div class="footer-right">
+                  <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer" class="link-muted">Discord</a>
+                  <button type="button" class="btn-copy" data-copy="9374844706">Copy ID</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="section-note">More assets are coming soon.</p>
+        </div>
+      </section>
+
+      <!-- Contacts Section -->
+      <section id="contacts" class="contacts-band">
+        <div class="container section-block">
+          <div class="contacts-intro">
+            <p class="kicker">Direct Links <span class="sep">·</span> Community &amp; Code</p>
+            <h2 class="section-title">Contacts</h2>
+            <p class="hero-lead">
+              Social Links where I post development stuff such as sneak peaks, gameplays & more.
+            </p>
+          </div>
+
+          <div class="contacts-grid">
+            <a href="https://www.roblox.com/users/1822975103/profile" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <p class="meta-line"><span>Roblox</span> <span class="sep">·</span> <span>User 1822975103</span></p>
+                <h3>Roblox Profile</h3>
+                <p>Inspect published games.</p>
+              </div>
+              <span class="contact-cta">Open Profile ↗</span>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCoX8sCDBYHisJUgnZMyLybA" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <p class="meta-line"><span>YouTube</span> <span class="sep">·</span> <span>Devlogs</span></p>
+                <h3>YouTube Channel</h3>
+                <p>Watch development progress & gameplays or funny videos.</p>
+              </div>
+              <span class="contact-cta">Watch Channel ↗</span>
+            </a>
+
+            <a href="https://discord.gg/H2V5pXdWg2" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <p class="meta-line"><span>Discord</span> <span class="sep">·</span> <span>Community Hub</span></p>
+                <h3>Discord Server</h3>
+                <p>Join thousand of people. Main announcements are here.</p>
+              </div>
+              <span class="contact-cta">Join Server ↗</span>
+            </a>
+
+            <a href="https://github.com/Reytinaz" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <p class="meta-line"><span>GitHub</span> <span class="sep">·</span> <span>@Reytinaz</span></p>
+                <h3>GitHub Profile</h3>
+                <p>Stuff outside of Roblox.</p>
+              </div>
+              <span class="contact-cta">View GitHub ↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Reytinaz. Roblox Experiences &amp; Studio Assets.</p>
+        <div class="footer-links">
+          <a href="#creations" data-tab-jump="games">Games</a>
+          <a href="#creations" data-tab-jump="assets">Assets</a>
+          <a href="#contacts">Contacts</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Preview Lightbox Modal -->
+    <div class="modal-backdrop" id="gameModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-box">
+        <button type="button" class="modal-close" id="modalClose" aria-label="Close preview">✕</button>
+        <div class="modal-media">
+          <img id="modalImg" src="" alt="" referrerpolicy="no-referrer" />
+          <div class="modal-scrim"></div>
+        </div>
+        <div class="modal-body">
+          <p class="meta-line" id="modalMeta"></p>
+          <h2 id="modalTitle" class="modal-title"></h2>
+          <p id="modalSummary" class="modal-summary"></p>
+          <div class="modal-actions">
+            <a id="modalPlay" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              Play on Roblox <span aria-hidden="true">↗</span>
+            </a>
+            <button type="button" id="modalCopy" class="btn-secondary">Copy Place ID</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const GAMES = {
+        'defeat-some-rake': {
+          id: '12354208327',
+          title: 'Defeat Some Rake',
+          meta: 'Featured · Battlegrounds & Fighting',
+          summary: 'An endless combat-based game where you and your team stand against a powerful creature using upgrades, spells, and various weapons.',
+          url: 'https://www.roblox.com/games/12354208327/defeat-some-rake',
+          image: 'https://tr.rbxcdn.com/180DAY-db11fa9edc37e01e85fe9a1d16ecb6b6/768/432/Image/Png/noFilter',
+          contain: false
+        },
+        'rakeman-lost-souls': {
+          id: '116197041930311',
+          title: 'RAKEMAN: Lost Souls',
+          meta: 'Newest Release · Survival with RPG Elements · Beta',
+          summary: 'Unleash your Soul and fight Rakeman. Train, learn, complete objectives, and survive against the stalker.',
+          url: 'https://www.roblox.com/games/116197041930311/RAKEMAN-Lost-Souls',
+          image: 'https://tr.rbxcdn.com/180DAY-3dc86cd04e2924795f224823a78667e8/768/432/Image/Png/noFilter',
+          contain: false
+        },
+        'endless-rain': {
+          id: '17828836933',
+          title: 'Endless Rain',
+          meta: 'Action · Early Access',
+          summary: 'Fast-paced action set inside a storm-swept world under relentless downpours, currently in active Early Access development.',
+          url: 'https://www.roblox.com/games/17828836933/Endless-Rain-Early-Access',
+          image: 'https://tr.rbxcdn.com/180DAY-eade99830a4595b71e36bd096f761a67/768/432/Image/Png/noFilter',
+          contain: false
+        },
+        'project-in-flood': {
+          id: '7850075948',
+          title: 'Project In Flood',
+          meta: 'Survival Obby · Live',
+          summary: 'Complete the course and escape rising floodwaters across community-built maps and obstacle stages.',
+          url: 'https://www.roblox.com/games/7850075948/Project-In-Flood',
+          image: 'https://tr.rbxcdn.com/180DAY-c51dfac2712ab54caad108ee76f68b27/512/512/Image/Png/noFilter',
+          contain: true
+        },
+        'infect-backout': {
+          id: '10853985544',
+          title: 'Infect Backout',
+          meta: 'Action · Alpha',
+          summary: 'Survive the night against the Infected—hide in lockers, buy survival gear, handle power outages, and complete all tasks.',
+          url: 'https://www.roblox.com/games/10853985544/Infect-Backout-ALPHA',
+          image: 'https://tr.rbxcdn.com/180DAY-3d9ae92ab2be62be18276d361d44b474/512/512/Image/Png/noFilter',
+          contain: true
+        },
+        'silence-of-robot': {
+          id: '13115507951',
+          title: 'Silence Of Robot',
+          meta: 'Facility Survival · Sci-Fi Survival · Beta',
+          summary: 'Take a shift at Best-Weld Corporation after AI robots gain self-control and try to survive across infinite stages.',
+          url: 'https://www.roblox.com/games/13115507951/Silence-Of-Robot-BETA',
+          image: 'https://tr.rbxcdn.com/180DAY-fa00d529790918d14e16aa626cca2587/768/432/Image/Png/noFilter',
+          contain: false
+        },
+        'chayl-admin-test': {
+          id: '9044893640',
+          title: "ChaYL's Admin Pack",
+          meta: 'Sandbox Arena · Admin Testing · Beta Test',
+          summary: 'Interactive testing environment built to preview moderation tools, command permissions, and server utilities in real time.',
+          url: 'https://www.roblox.com/games/9044893640/ChaYL-s-Admin-Test',
+          image: 'https://t5.rbxcdn.com/180DAY-26de3a6f3be928df6691f27dc32575c9',
+          contain: true
+        }
+      };
+
+      const gamesPanel = document.getElementById('gamesPanel');
+      const assetsPanel = document.getElementById('assetsPanel');
+      const tabBtns = document.querySelectorAll('.tab-btn');
+
+      function setTab(tab) {
+        tabBtns.forEach((btn) => {
+          const active = btn.dataset.tab === tab;
+          btn.classList.toggle('is-active', active);
+          btn.setAttribute('aria-selected', String(active));
+        });
+        gamesPanel.hidden = tab === 'assets';
+        assetsPanel.hidden = tab === 'games';
+        assetsPanel.classList.toggle('sub-section-divider', tab === 'all');
+      }
+
+      tabBtns.forEach((btn) => btn.addEventListener('click', () => setTab(btn.dataset.tab)));
+
+      document.querySelectorAll('[data-tab-jump]').forEach((link) => {
+        link.addEventListener('click', () => {
+          setTab(link.dataset.tabJump);
+          mobileDrawer.hidden = true;
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      menuToggle.addEventListener('click', () => {
+        const open = mobileDrawer.hidden;
+        mobileDrawer.hidden = !open;
+        menuToggle.setAttribute('aria-expanded', String(open));
+      });
+      mobileDrawer.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+          mobileDrawer.hidden = true;
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.querySelectorAll('[data-copy]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(btn.dataset.copy);
+            const prev = btn.textContent;
+            btn.textContent = 'Copied';
+            setTimeout(() => { btn.textContent = prev; }, 1600);
+          } catch {}
+        });
+      });
+
+      const modal = document.getElementById('gameModal');
+      const modalImg = document.getElementById('modalImg');
+      const modalMeta = document.getElementById('modalMeta');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalSummary = document.getElementById('modalSummary');
+      const modalPlay = document.getElementById('modalPlay');
+      const modalCopy = document.getElementById('modalCopy');
+      let currentGameId = '';
+
+      document.querySelectorAll('[data-preview]').forEach((el) => {
+        el.addEventListener('click', () => {
+          const g = GAMES[el.dataset.preview];
+          if (!g) return;
+          currentGameId = g.id;
+          modalImg.src = g.image;
+          modalImg.alt = g.title;
+          modalImg.className = g.contain ? 'is-contain' : '';
+          modalMeta.textContent = `${g.meta} · ID ${g.id}`;
+          modalTitle.textContent = g.title;
+          modalSummary.textContent = g.summary;
+          modalPlay.href = g.url;
+          modalCopy.textContent = 'Copy Place ID';
+          modal.hidden = false;
+        });
+      });
+
+      function closeModal() {
+        modal.hidden = true;
+      }
+
+      document.getElementById('modalClose').addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeModal();
+      });
+      modalCopy.addEventListener('click', async () => {
+        if (!currentGameId) return;
+        try {
+          await navigator.clipboard.writeText(currentGameId);
+          modalCopy.textContent = 'Copied ID';
+          setTimeout(() => { modalCopy.textContent = 'Copy Place ID'; }, 1600);
+        } catch {}
+      });
+    </script>
+  </body>
 </html>
